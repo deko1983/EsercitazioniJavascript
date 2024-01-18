@@ -1,4 +1,3 @@
-
 function fibonacci(n)  {
     var serie = [0,1];
 
@@ -53,8 +52,8 @@ var printArray = function(arr)  {
 // Funzione di stampa con indice
 var printArrayNoIndex = function(arr)  {
     if (Array.isArray(arr))  {
-        for (var i=0; i < arr.length; i++)  {
-            console.log(arr[i]);
+        for (var v of arr)  {
+            console.log(v);
         }
     }
 }
@@ -62,4 +61,6 @@ var printArrayNoIndex = function(arr)  {
 // chiamo la medesima funzione usando diverse funzioni di stampa
 fibonacciEStampa(5, printArray);
 fibonacciEStampa(5, printArrayNoIndex);
+
+
 
